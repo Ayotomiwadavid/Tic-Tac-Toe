@@ -1,0 +1,116 @@
+::selection{
+    color: red;
+    background-color: pink;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0B212F;
+}
+
+.gameContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background-color: #0B212F;
+}
+
+.turnSwitcher{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin: 10px;
+}
+
+.turnSwitcher span{
+    width: 130px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 15px;
+    transition: all .5s ease;
+    cursor: pointer;
+    font-weight:  bolder;
+}
+
+.turnSwitcher span.active{
+    background-color: #4705ff;
+    border-radius: 10px;
+}
+
+.gameWrapper{
+    height: 350px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+}
+
+.gameWrapper div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 45px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.winingAlert{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+}
+
+.winingMsg{
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+.button{
+    width: 90%;
+    height: 45px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 10px;
+    background-color: #4705ff;
+    color: #fff;
+    font-size: 20px;
+    transition: all .5s ease;
+}
+
+.button:hover{
+    background-color: #4705ff;
+    opacity: 0.7;
+}
